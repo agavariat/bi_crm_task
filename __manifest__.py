@@ -4,13 +4,13 @@
 
 {
     'name': 'Create Task from Lead',
-    'version': '12.0.0.1',
+    'version': '13.0.0.1',
     'category': 'CRM',
     'description': """
     Task on Lead, Add Task from lead, Task Lead, Create Project Task from Lead, Add task from mail, Create task from mail.Task on lead, add task on lead, tasks on lead, lead tasks, automated task by lead, Generate task from lead.
 """,
     'author': 'BrowseInfo',
-    'website': 'http://www.browseinfo.in',
+    'website': 'https://www.browseinfo.in',
     'images': [],
     'depends': ['base', 'crm', 'sale', 'project'],
     

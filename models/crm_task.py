@@ -16,8 +16,7 @@ from odoo import SUPERUSER_ID
 class crm_lead(models.Model):
     """ CRM Lead Case """
     _inherit = "crm.lead"
-    
-    @api.multi
+
     def task_count(self):
         task_obj = self.env['project.task']
         self.task_number = task_obj.search_count([('lead_id', 'in', [a.id for a in self])])
@@ -41,8 +40,7 @@ class crm_task_wizard(models.TransientModel):
     name = fields.Char('Task Name',default = get_name)
     user_id = fields.Many2one('res.users','Assigned To',default=lambda self: self.env.uid,
         index=True, track_visibility='always')
-    
-    @api.one
+
     def create_task(self):
         ctx = dict(self._context or {})
         active_id = ctx.get('active_id')

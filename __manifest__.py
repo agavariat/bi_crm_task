@@ -4,22 +4,22 @@
 
 {
     'name': 'Create Task from Lead',
-    'version': '12.0.0.1',
+    'version': '14.0.0.1',
     'category': 'CRM',
+    'summary': 'This odoo apps helps user to easily create new task with deadline and project name directly from lead.',
     'description': """
     Task on Lead, Add Task from lead, Task Lead, Create Project Task from Lead, Add task from mail, Create task from mail.Task on lead, add task on lead, tasks on lead, lead tasks, automated task by lead, Generate task from lead.
 """,
     'author': 'BrowseInfo',
-    'website': 'http://www.browseinfo.in',
-    'images': [],
+    'website': 'https://www.browseinfo.in',
     'depends': ['base', 'crm', 'sale', 'project'],
-    
-    'data': [ 
+    'data': [ 'security/ir.model.access.csv',
              'views/crm_lead_view.xml'
     ],
     'installable': True,
     'auto_install': False,
     'application': True,
+    'live_test_url':'https://youtu.be/UYOQ_orKtlg',
     "images":['static/description/Banner.png'],
 }
 
